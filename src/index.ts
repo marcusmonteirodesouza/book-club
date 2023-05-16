@@ -1,17 +1,5 @@
-console.log('Try npm run lint/fix!');
+import {app} from './app';
 
-export function doSomeStuff(
-  withThis: string,
-  andThat: string,
-  andThose: string[]
-) {
-  //function on one line
-  if (!andThose.length) {
-    return false;
-  }
-  console.log(withThis);
-  console.log(andThat);
-  console.dir(andThose);
-  return;
-}
-// TODO: more examples
+app.listen(3001, () => {
+  console.log('Book Club server listening on port 3001...');
+});
