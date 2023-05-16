@@ -1,5 +1,6 @@
 import {app} from './app';
+import {config} from './config';
 
-app.listen(3001, () => {
-  console.log('Book Club server listening on port 3001...');
+app.listen(config.port, () => {
+  console.log(`Book Club server listening on port ${config.port}...`);
 });
